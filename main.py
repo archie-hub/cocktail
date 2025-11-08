@@ -47,7 +47,7 @@ class MakeDrinks:
         self.current_receipes = self.open_receipes(current_receipes)
         self.drinks_cabinet = self.open_drinks_cabinet(drinks_available_at_home)
         self.drinks()
-        self.drink_selection_broken_by_ingredient_string = self.drink_selection_broken_by_ingredient()
+        self.drink_selection_broken_by_ingredient_string = self.available_drink_selection_broken_by_ingredient()
 
 
     def open_receipes(self, current_receipes):
@@ -86,7 +86,8 @@ class MakeDrinks:
         """Kdklefkl"""
         self.drinks_string = ""
         for drink in sorted(self.possible_drinks, reverse=True):
-            line = f"{string.capwords(drink)} - {string.capwords(', '.join(self.current_receipes[drink]))}. \n"
+            line = (f"{string.capwords(drink)} -"
+                    f" {string.capwords(', '.join(dict(sorted(self.current_receipes[drink].items()))))}. \n")
             self.drinks_string = line + self.drinks_string
         lines = self.drinks_string.splitlines()
         lines.sort()
@@ -98,6 +99,7 @@ class MakeDrinks:
         """Kdklefkl"""
         self.drinks_string = ""
         for drink in sorted(component, reverse=True):
+            print(102,self.current_receipes[drink])
             line = f"{drink} - {', '.join(self.current_receipes[drink])} xx \n"
             self.drinks_string = line + self.drinks_string
         return self.drinks_string
@@ -161,7 +163,10 @@ class MakeDrinks:
         """sdgdgdfgd"""
         self.name = name.lower()
         self.drink_receipe = ""
-        for ingredient, measure in self.current_receipes[name.rstrip()].items():
+        #print(167,dict(sorted(self.current_receipes[name.rstrip()].items())).items())
+        for ingredient, measure in dict(sorted(self.current_receipes[name.rstrip()].items())).items():
+
+        #for ingredient, measure in self.current_receipes[name.rstrip()].items():
             self.drink_receipe = (
                     self.drink_receipe + measure + " " + ingredient.capitalize() + ", "
             )
@@ -169,10 +174,12 @@ class MakeDrinks:
 
     def drink_receipe_with_an_ingredient(self, ingredient):
         ingredient = ingredient.lower()
+        #print(ingredient,175)
         self.available_drinks_with_ingredient_x(ingredient)
         self.receipe_string = ""
         for drink in self.available_drinks_with_previous_ingredients:
             self.whats_in_drink(drink)
+            #print(180, self.drink_receipe[:-2])
             self.receipe_string = self.name.capitalize() + " - " \
                                   + self.drink_receipe[:-2] \
                                   + ".\n" + self.receipe_string
@@ -183,11 +190,14 @@ class MakeDrinks:
             self.receipe_string = f"We dont have any {ingredient.capitalize()}"
         return self.receipe_string
 
-    def drink_selection_broken_by_ingredient(self):
+    def available_drink_selection_broken_by_ingredient(self):
+        ##print(88888)
         drinks = []
-        for x in ['bacardi','cointreau','gin','jack daniels','vodka']:
-            self.drink_receipe_with_an_ingredient(x)
-            drinks.append(x.capitalize() + "\n" + self.receipe_string + '\n\n')
+        for main_component in ['bacardi','cointreau','gin','jack daniels','vodka']:
+            self.drink_receipe_with_an_ingredient(main_component)
+            #print(self.receipe_string,194)
+
+            drinks.append(main_component.capitalize() + "\n" + self.receipe_string + '\n\n')
         return "".join(drinks)
 
         #return self.drink_selection_broken_by_ingredient_string
@@ -195,11 +205,14 @@ def main():
     """dsfdsf"""
     cabinet = "./drinkscabinet.txt"
     receipes = "./receipes.json"
-    x = MakeDrinks(receipes,cabinet)
-    print(x.possible_drinks_string())
+    ourdrinks = MakeDrinks(receipes,cabinet)
+    print(ourdrinks.possible_drinks_string())
+    #print.next_time())
+    #print(ourdrinks.available_drink_selection_broken_by_ingredient())
     #print(x.drink_receipe)
     #print(x.drink_selection_broken_by_ingredient())
     #print(x.print_menu())
+    #print(x.possible_drinks_string_component('vodka'))
 
 if __name__ == "__main__":
     main()
