@@ -180,7 +180,7 @@ class MakeDrinks:
         for drink in self.available_drinks_with_previous_ingredients:
             self.whats_in_drink(drink)
             #print(180, self.drink_receipe[:-2])
-            self.receipe_string = self.name.capitalize() + " - " \
+            self.receipe_string = self.name.title() + " - " \
                                   + self.drink_receipe[:-2] \
                                   + ".\n" + self.receipe_string
         lines = self.receipe_string.splitlines()
@@ -197,7 +197,9 @@ class MakeDrinks:
             self.drink_receipe_with_an_ingredient(main_component)
             #print(self.receipe_string,194)
 
-            drinks.append(main_component.capitalize() + "\n" + self.receipe_string + '\n\n')
+            #drinks.append(main_component.capitalize() + "\n" + self.receipe_string + '\n\n')
+            drinks.append(main_component.title() + "\n" + self.receipe_string + '\n\n')
+
         return "".join(drinks)
 
         #return self.drink_selection_broken_by_ingredient_string
@@ -207,9 +209,16 @@ def main():
     receipes = "./receipes.json"
     ourdrinks = MakeDrinks(receipes,cabinet)
     print(ourdrinks.possible_drinks_string())
-    #print.next_time())
+
     #print(ourdrinks.available_drink_selection_broken_by_ingredient())
-    #print(x.drink_receipe)
+    #print(ourdrinks.drink_receipe_with_an_ingredient('gin'))
+    #print(ourdrinks.zzzzavailable_drinks_with_ingredient('kahlua'),212)
+    # Needs some tweaking.
+    # print(ourdrinks.create_new_drinks_lists())
+    # print(ourdrinks.best_buy_dict)
+    # print(ourdrinks.best_item_to_buy)
+    # print(ourdrinks.how_many)
+
     #print(x.drink_selection_broken_by_ingredient())
     #print(x.print_menu())
     #print(x.possible_drinks_string_component('vodka'))
