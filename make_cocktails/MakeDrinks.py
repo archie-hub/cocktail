@@ -1,7 +1,7 @@
 """"sdfdsfdsfsdf"""
 import datetime
 #!/usr/bin/env python3
-
+from fpdf import FPDF
 import json
 import os
 import string
@@ -44,11 +44,36 @@ class MakeDrinks:
         self.drink_components = None
         self.available_drinks_with_previous_ingredients = None
         self.receipe_string = None
+        #self.drinks_we_can_make_with_receipes_dictionary = None
         self.current_receipes = self.open_receipes(current_receipes)
         self.drinks_cabinet = self.open_drinks_cabinet(drinks_available_at_home)
         self.drinks()
-        self.drink_selection_broken_by_ingredient_string = self.available_drink_selection_broken_by_ingredient()
+        self.drink_selection_broken_by_ingredient_string = self.string_available_drink_selection_broken_by_ingredient()
+        self.drinks_we_can_make_with_receipes_dictionary = None
+        self.drinks_we_can_make_with_receipes_json()
 
+    def drinks_we_can_make_with_receipes_json(self):
+        self.drinks_we_can_make_with_receipes_dictionary = {}
+        #print(self.possible_drinks)
+        for drink in self.possible_drinks:
+            self.drinks_we_can_make_with_receipes_dictionary[drink] = self.current_receipes[drink]
+        print(type(self.drinks_we_can_make_with_receipes_dictionary))
+        return self.drinks_we_can_make_with_receipes_dictionary
+
+    def print_possible_drinks_string_to_pdf(self):
+        pdf = FPDF()
+        pdf.add_page()
+        pdf.set_font("helvetica", size=12)
+        pdf.multi_cell(0, 10, txt=self.possible_drinks_string())
+        pdf.output("outpuzzt.pdf")
+
+
+    def xprint_possible_drinks_string_by_component_to_pdf(self):
+        pdf = FPDF()
+        pdf.add_page()
+        pdf.set_font("helvetica", size=10)
+        pdf.multi_cell(0, 10, txt=self.available_drink_selection_broken_by_ingredient())
+        pdf.output("bycomponent.pdf")
 
     def open_receipes(self, current_receipes):
         """dsfdsfs"""
@@ -154,8 +179,11 @@ class MakeDrinks:
         """Kdklefkl"""
         self.available_drinks_with_previous_ingredients = []
         for ingredient_in in self.possible_drinks:
+            #print(171)
             if component in self.current_receipes[ingredient_in]:
                 self.available_drinks_with_previous_ingredients.append(ingredient_in)
+        #print(174, self.available_drinks_with_previous_ingredients)
+
         return self.available_drinks_with_previous_ingredients.sort()
 
 
@@ -163,23 +191,20 @@ class MakeDrinks:
         """sdgdgdfgd"""
         self.name = name.lower()
         self.drink_receipe = ""
-        #print(167,dict(sorted(self.current_receipes[name.rstrip()].items())).items())
         for ingredient, measure in dict(sorted(self.current_receipes[name.rstrip()].items())).items():
-
-        #for ingredient, measure in self.current_receipes[name.rstrip()].items():
             self.drink_receipe = (
                     self.drink_receipe + measure + " " + ingredient.capitalize() + ", "
             )
         return self.name, self.drink_receipe
 
-    def drink_receipe_with_an_ingredient(self, ingredient):
+    def string_drink_receipe_with_an_ingredient(self, ingredient):
         ingredient = ingredient.lower()
-        #print(ingredient,175)
         self.available_drinks_with_ingredient_x(ingredient)
+        #print(191,self.available_drinks_with_previous_ingredients)
         self.receipe_string = ""
         for drink in self.available_drinks_with_previous_ingredients:
             self.whats_in_drink(drink)
-            #print(180, self.drink_receipe[:-2])
+            #print(192,self.name, self.drink_receipe)
             self.receipe_string = self.name.title() + " - " \
                                   + self.drink_receipe[:-2] \
                                   + ".\n" + self.receipe_string
@@ -190,28 +215,37 @@ class MakeDrinks:
             self.receipe_string = f"We dont have any {ingredient.capitalize()}"
         return self.receipe_string
 
-    def available_drink_selection_broken_by_ingredient(self):
+    def string_available_drink_selection_broken_by_ingredient(self):
         ##print(88888)
         drinks = []
         for main_component in ['bacardi','cointreau','gin','jack daniels','vodka']:
-            self.drink_receipe_with_an_ingredient(main_component)
-            #print(self.receipe_string,194)
-
+            self.string_drink_receipe_with_an_ingredient(main_component)
             #drinks.append(main_component.capitalize() + "\n" + self.receipe_string + '\n\n')
             drinks.append(main_component.title() + "\n" + self.receipe_string + '\n\n')
-
         return "".join(drinks)
 
         #return self.drink_selection_broken_by_ingredient_string
+
+
+
 def main():
     """dsfdsf"""
     cabinet = "./drinkscabinet.txt"
     receipes = "./receipes.json"
     ourdrinks = MakeDrinks(receipes,cabinet)
-    print(ourdrinks.possible_drinks_string())
+    print(ourdrinks.drinks_we_can_make_with_receipes_dictionary)
+    #ourdrinks.drinks_we_can_make_with_receipes_json()
+    #print(ourdrinks.whats_in_drink('White Lady'))
+    #print(ourdrinks.possible_drinks_string())
+    #file_name="somefile.txt"
+    #with open(file_name, 'w') as file_object:
+     #   file_object.write(ourdrinks.possible_drinks_string())
 
+    #print(f"String successfully written to '{file_name}'")
+    #ourdrinks.print_possible_drinks_string()
+    #print(ourdrinks.available_drink_selection_broken_by_ingredient(),777)
     #print(ourdrinks.available_drink_selection_broken_by_ingredient())
-    #print(ourdrinks.drink_receipe_with_an_ingredient('gin'))
+    #print("\n\n",ourdrinks.string_drink_receipe_with_an_ingredient('gin'))
     #print(ourdrinks.zzzzavailable_drinks_with_ingredient('kahlua'),212)
     # Needs some tweaking.
     # print(ourdrinks.create_new_drinks_lists())
@@ -222,6 +256,12 @@ def main():
     #print(x.drink_selection_broken_by_ingredient())
     #print(x.print_menu())
     #print(x.possible_drinks_string_component('vodka'))
+    #  ourdrinks.print_possible_drinks_string_by_component()
+    #print(ourdrinks.string_available_drink_selection_broken_by_ingredient())
+    #print(ourdrinks.drinks(),244)
+    #print(ourdrinks.possible_drinks)
+
+
 
 if __name__ == "__main__":
     main()

@@ -4,11 +4,12 @@ port
 sambuca
 citrus vodka
 vanilla vodka
+vodka
 grand marnier
 cointreau
-vodka
-coke
 ouzo
+espresso
+kahlua
 jack daniels
 white rum
 bacardi
