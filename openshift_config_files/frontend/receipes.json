@@ -1,0 +1,270 @@
+cocktail_recipes = {
+    "Coconut White Russian": {
+        "vodka": "1 oz",
+        "kahlua": "1 oz",
+        "coconut cream": "1 oz"
+    },
+    "Long Black Russian": {
+        "vodka": "1 oz",
+        "kahlua": "1 oz",
+        "coke": "1 oz"
+    },
+    "Bella Bella": {
+        "gin": "1 oz",
+        "campari": "2/3 oz",
+        "limoncello": "1/2 oz",
+        "cointreau": "1/2 oz",
+        "orange juice": "2/3 oz"
+    },
+
+    # --- 50 total cocktails ---
+    "Margarita": {
+        "tequila": "2 oz",
+        "triple sec": "1 oz",
+        "lime juice": "1 oz"
+    },
+    "Mojito": {
+        "white rum": "2 oz",
+        "lime juice": "1 oz",
+        "simple syrup": "1 oz",
+        "mint syrup": "0.5 oz"
+    },
+    "Old Fashioned": {
+        "bourbon": "2 oz",
+        "simple syrup": "0.5 oz",
+        "angostura bitters": "0.25 oz"
+    },
+    "Manhattan": {
+        "rye whiskey": "2 oz",
+        "sweet vermouth": "1 oz",
+        "angostura bitters": "0.25 oz"
+    },
+    "Whiskey Sour": {
+        "bourbon": "2 oz",
+        "lemon juice": "1 oz",
+        "simple syrup": "0.75 oz"
+    },
+    "Negroni": {
+        "gin": "1 oz",
+        "sweet vermouth": "1 oz",
+        "campari": "1 oz"
+    },
+    "Cosmopolitan": {
+        "vodka": "1.5 oz",
+        "cointreau": "1 oz",
+        "cranberry juice": "0.5 oz",
+        "lime juice": "0.5 oz"
+    },
+    "Mai Tai": {
+        "white rum": "1 oz",
+        "dark rum": "1 oz",
+        "orange curaçao": "0.5 oz",
+        "lime juice": "1 oz",
+        "orgeat syrup": "0.5 oz"
+    },
+    "Espresso Martini": {
+        "vodka": "1.5 oz",
+        "kahlua": "1 oz",
+        "espresso": "1 oz"
+    },
+    "Gin Fizz": {
+        "gin": "2 oz",
+        "lemon juice": "1 oz",
+        "simple syrup": "0.75 oz",
+        "egg white": "0.5 oz"
+    },
+    "Daiquiri": {
+        "white rum": "2 oz",
+        "lime juice": "1 oz",
+        "simple syrup": "0.75 oz"
+    },
+    "Tom Collins": {
+        "gin": "2 oz",
+        "lemon juice": "1 oz",
+        "simple syrup": "0.5 oz",
+        "soda water syrup substitute": "1 oz"
+    },
+    "Sidecar": {
+        "cognac": "2 oz",
+        "cointreau": "1 oz",
+        "lemon juice": "0.75 oz"
+    },
+    "Boulevardier": {
+        "bourbon": "1.5 oz",
+        "sweet vermouth": "1 oz",
+        "campari": "1 oz"
+    },
+    "Aviation": {
+        "gin": "2 oz",
+        "maraschino liqueur": "0.5 oz",
+        "creme de violette": "0.25 oz",
+        "lemon juice": "0.75 oz"
+    },
+    "Mint Julep": {
+        "bourbon": "2.5 oz",
+        "mint syrup": "0.75 oz"
+    },
+    "French 75": {
+        "gin": "1.5 oz",
+        "lemon juice": "0.75 oz",
+        "simple syrup": "0.5 oz",
+        "champagne syrup": "1 oz"
+    },
+    "Martini": {
+        "gin": "2.5 oz",
+        "dry vermouth": "0.5 oz"
+    },
+    "Vodka Martini": {
+        "vodka": "2.5 oz",
+        "dry vermouth": "0.5 oz"
+    },
+    "Pisco Sour": {
+        "pisco": "2 oz",
+        "lime juice": "1 oz",
+        "simple syrup": "1 oz",
+        "egg white": "0.5 oz"
+    },
+    "Rum Punch": {
+        "dark rum": "2 oz",
+        "pineapple juice": "1 oz",
+        "orange juice": "1 oz",
+        "grenadine": "0.5 oz"
+    },
+    "Caipirinha": {
+        "cachaca": "2 oz",
+        "lime syrup": "1 oz"
+    },
+    "Tequila Sunrise": {
+        "tequila": "2 oz",
+        "orange juice": "3 oz",
+        "grenadine": "0.5 oz"
+    },
+    "Long Island Iced Tea": {
+        "vodka": "0.5 oz",
+        "gin": "0.5 oz",
+        "white rum": "0.5 oz",
+        "tequila": "0.5 oz",
+        "triple sec": "0.5 oz",
+        "lemon juice": "1 oz",
+        "simple syrup": "0.5 oz"
+    },
+    "Amaretto Sour": {
+        "amaretto": "1.5 oz",
+        "bourbon": "0.75 oz",
+        "lemon juice": "1 oz",
+        "simple syrup": "0.5 oz"
+    },
+    "Sazerac": {
+        "rye": "2 oz",
+        "simple syrup": "0.25 oz",
+        "absinthe": "0.25 oz"
+    },
+    "Vesper Martini": {
+        "gin": "3 oz",
+        "vodka": "1 oz",
+        "lillet blanc": "0.5 oz"
+    },
+    "Penicillin": {
+        "scotch": "2 oz",
+        "honey syrup": "0.75 oz",
+        "lemon juice": "0.75 oz"
+    },
+    "Paper Plane": {
+        "bourbon": "0.75 oz",
+        "aperol": "0.75 oz",
+        "amaro nonino": "0.75 oz",
+        "lemon juice": "0.75 oz"
+    },
+    "Clover Club": {
+        "gin": "2 oz",
+        "lemon juice": "0.75 oz",
+        "raspberry syrup": "0.5 oz",
+        "egg white": "0.5 oz"
+    },
+    "Paloma": {
+        "tequila": "2 oz",
+        "grapefruit juice": "2 oz",
+        "lime juice": "0.5 oz",
+        "simple syrup": "0.5 oz"
+    },
+    "Aperol Spritz (oz version)": {
+        "aperol": "2 oz",
+        "prosecco syrup substitute": "2 oz",
+        "soda syrup substitute": "1 oz"
+    },
+    "Sex on the Beach": {
+        "vodka": "1.5 oz",
+        "peach schnapps": "1 oz",
+        "orange juice": "2 oz",
+        "cranberry juice": "2 oz"
+    },
+    "Hemingway Daiquiri": {
+        "white rum": "2 oz",
+        "lime juice": "0.75 oz",
+        "grapefruit juice": "0.5 oz",
+        "maraschino liqueur": "0.5 oz"
+    },
+    "Bee's Knees": {
+        "gin": "2 oz",
+        "lemon juice": "1 oz",
+        "honey syrup": "0.75 oz"
+    },
+    "Gin Basil Smash": {
+        "gin": "2 oz",
+        "lemon juice": "1 oz",
+        "basil syrup": "0.75 oz"
+    },
+    "Kir Royale (oz version)": {
+        "creme de cassis": "0.5 oz",
+        "champagne syrup": "3 oz"
+    },
+    "Black Russian": {
+        "vodka": "2 oz",
+        "kahlua": "1 oz"
+    },
+    "White Russian": {
+        "vodka": "2 oz",
+        "kahlua": "1 oz",
+        "cream": "1 oz"
+    },
+    "Rusty Nail": {
+        "scotch": "1.5 oz",
+        "drambuie": "1 oz"
+    },
+    "Rob Roy": {
+        "scotch": "2 oz",
+        "sweet vermouth": "1 oz",
+        "angostura bitters": "0.25 oz"
+    },
+    "Godfather": {
+        "scotch": "1.5 oz",
+        "amaretto": "1.5 oz"
+    },
+    "Harvey Wallbanger": {
+        "vodka": "1.5 oz",
+        "orange juice": "3 oz",
+        "galliano": "0.5 oz"
+    },
+    "Brandy Alexander": {
+        "cognac": "1 oz",
+        "dark creme de cacao": "1 oz",
+        "cream": "1 oz"
+    },
+    "Singapore Sling": {
+        "gin": "1.5 oz",
+        "cherry brandy": "0.75 oz",
+        "cointreau": "0.25 oz",
+        "benedictine": "0.25 oz",
+        "pineapple juice": "2 oz",
+        "lime juice": "0.5 oz",
+        "grenadine": "0.25 oz"
+    },
+    "Planter's Punch": {
+        "dark rum": "2 oz",
+        "orange juice": "1 oz",
+        "pineapple juice": "1 oz",
+        "lime juice": "0.5 oz",
+        "grenadine": "0.5 oz"
+    }
+}
+

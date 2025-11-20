@@ -1,0 +1,4 @@
+# Delete this line and add the drinks you have on each line. Then put in a config map.
+vodka
+grand marnier
+cointreau

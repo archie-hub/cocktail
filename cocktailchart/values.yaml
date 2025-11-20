@@ -1,0 +1,29 @@
+replicaCount: 2
+project: cocktail
+
+frontend:
+  repository:  default-route-openshift-image-registry.apps-crc.testing/kathy/frontend
+  tag: latest
+  pullPolicy: Always
+  app: cocktailwebfrontend
+  servicename: frontendservice
+
+backend:
+  repository:  default-route-openshift-image-registry.apps-crc.testing/kathy/cocktailapi
+  tag: latest
+  pullPolicy: Always
+  app: cocktailapi
+  servicename: backendservice
+
+nameOverride: ""
+fullnameOverride: ""
+
+env:
+  - name: ENV
+    value: "base"
+
+service:
+  port: 8080
+
+labels:
+  app: myapp

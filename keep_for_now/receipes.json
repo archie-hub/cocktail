@@ -1,0 +1,293 @@
+{
+    "colorado bulldog": {
+        "vodka": "1oz",
+        "kahlua": "1oz",
+        "cream": "1oz",
+        "coke": "1oz"
+    },
+    "banana split": {
+        "creme de banana": "1oz",
+        "cream": "1oz",
+        "kahlua": "1oz",
+        "pineapple juice": "whatever"
+    },
+    "espresso martini": {"espresso": "1oz", "kahlua": "1oz", "vodka": "1oz"},
+    "black russian": {"vodka": "1oz", "kahlua": "1oz"},
+    "white russian": {"kahlua": "1oz", "cream": "1oz", "vodka": "1oz"},
+    "unrequited Love Punch": {
+        "jack daniels": "1oz",
+        "cranberry juice": "1oz",
+        "pineapple juice": "1oz",
+        "orange juice": "1oz",
+        "ginger ale": "1oz"
+    },
+    "silent seven": {
+        "jack daniels": "1oz",
+        "cointreau": "1oz",
+        "lemon juice": "1oz",
+        "simple syrup": "1oz"
+    },
+    "long island iced tea": {
+        "lemon juice": "1oz",
+        "gin": "1oz",
+        "tequila": "1oz",
+        "cointreau": "1oz",
+        "vodka": "1oz",
+        "bacardi": "1oz",
+        "coke": "1oz"
+    },
+    "tropical Captain Jack": {
+        "simple syrup": "1oz",
+        "lime juice": "1oz",
+        "jack daniels": "1oz",
+        "coconutcream": "1oz"
+    },
+    "jack old fashioned": {"jack daniels": "1oz", "simple syrup": "1oz"},
+    "mojito": {"lime juice": "1oz", "bacardi": "1oz"},
+    "negroni": {"campari": "1oz", "sweet vermouth": "1oz", "gin": "1oz"},
+    "Americano": {"campari": "1oz", "sweet vermouth": "1oz"},
+    "pimms": {"pimms": "1oz", "sprite": "1oz"},
+    "arameto cream": {"amaretto": "1oz", "cream": "1oz"},
+    "rusty nail": {"scotch": "1oz", "drambuie": "1oz"},
+    "godiva Chocolate Martini": {
+        "Creme de Cacao": "1 1/2 oz}",
+        "chocolate liqueur": "1 1/2 oz",
+        "vanilla vodka": "1/2 oz",
+        "cream": "2 1/2 oz"
+    },
+    "chocolate Mandarin Martini": {
+        "chocolate liquer": "1 oz",
+        "vodka": "1 1/2 oz",
+        "cointreau": "1/4 oz"
+    },
+    "sidecar": {"brandy": "1oz", "cointreau": "1oz"},
+    "daiquri": {"bacardi": "1oz", "simple syrup": "1oz", "lime juice": "1oz"},
+    "margarita": {"tequila": "1oz", "cointreau": "1oz", "lime juice": "1oz"},
+    "cosmopolitan": {
+        "citrus vodka": "1oz",
+        "cointreau": "1oz",
+        "cranberry juice": "1oz",
+        "lime juice": "1oz"
+    },
+    "old fashioned": {
+        "sugar cube": "1oz",
+        "water": "1oz",
+        "angostura bitters": "1oz",
+        "rye": "1oz"
+    },
+    "classic martini": {"gin": "1oz", "cinzano": "1oz", "orange bitters": "1oz"},
+    "manhatten": {"rye": "1oz", "sweet vermouth": "1oz", "angostura bitters": "1oz"},
+    "mai tai": {
+        "bacardi": "1oz",
+        "gold rum": "1oz",
+        "cointreau": "1oz",
+        "orgeat": "1oz",
+        "lime juice": "1oz"
+    },
+    "agavoni": {
+        "tequila": "1oz",
+        "campari": "1oz",
+        "sweet vermouth": "1oz",
+        "orange bitters": "1oz"
+    },
+    "alaska": {"gin": "1oz", "Chartreuse": "1oz", "orange bitters": "1oz"},
+    "alexander": {"brandy": "1oz", "cream": "1oz", "creme de cacao": "1oz"},
+    "algonquin": {"rye": "1oz", "dry vermouth": "1oz", "pineapple juice": "1oz"},
+    "aviation": {"gin": "1oz", "maraschino liqueur": "1oz", "lemon juice": "1oz"},
+    "bacardi cocktail": {"bacardi": "1oz", "lemon juice": "1oz", "grenadine": "1oz"},
+    "bamboo": {
+        "dry vermouth": "1oz",
+        "dry sherry": "1oz",
+        "angostura bitters": "1oz",
+        "orange bitters": "1oz"
+    },
+    "beach blanket": {
+        "jagermeister": "1oz",
+        "kahlua": "1oz",
+        "raspberry liqueur": "1oz",
+        "cream": "1oz"
+    },
+    "french 75": {
+        "gin": "1oz",
+        "lemon juice": "1oz",
+        "simple syrup": "1oz",
+        "champagne": "1oz"
+    },
+    "gibson": {"gin": "1oz", "dry vermouth": "1oz"},
+    "gimlet": {"gin": "1oz", "Roses lime juice": "1oz"},
+    "gin buck": {"gin": "1oz", "lime juice": "1oz", "ginger ale": "1oz"},
+    "gin daisy": {"gin": "1oz", "lemon juice": "1oz", "grenadine": "1oz"},
+    "gin fix": {"gin": "1oz", "lemon juice": "1oz", "pineapple juice": "1oz"},
+    "gin fizz": {
+        "gin": "1oz",
+        "lemon juice": "1oz",
+        "simple syrup": "1oz",
+        "clubsoda": "1oz"
+    },
+    "gin rickey": {
+        "gin": "1oz",
+        "lime juice": "1oz",
+        "simple syrup": "1oz",
+        "clubsoda": "1oz"
+    },
+    "gin sling": {"gin": "1oz", "water": "1oz", "simple syrup": "1oz"},
+    "golden dawn": {
+        "gin": "1oz",
+        "calvados": "1oz",
+        "apricot brandy": "1oz",
+        "orange juice": "1oz"
+    },
+    "highland cocktail": {
+        "scotch whiskey": "1oz",
+        "sweet vermouth": "1oz",
+        "orange bitters": "1oz"
+    },
+    "income tax": {
+        "gin": "1oz",
+        "orange juice": "1oz",
+        "dry vermouth": "1oz",
+        "sweet vermouth": "1oz",
+        "angostura bitters": "1oz"
+    },
+    "Japanese": {"brandy": "1oz", "orgeat": "1oz", "angostura bitters": "1oz"},
+    "Joli Rajah": {
+        "bacardi": "1oz",
+        "lemon juice": "1oz",
+        "grenadine": "1oz",
+        "absinthe": "1oz"
+    },
+    "Kangaroo": {"vodka": "1oz", "dry vermouth": "1oz"},
+    "Dawn": {"gin": "1 oz", "campari": "3/4 oz", "orange juice": "1 3/4 oz"},
+    "Lemon drop": {"citrus vodka": "1oz", "lemon juice": "1oz", "sugar": "1oz"},
+    "Lucien Gaudin": {
+        "gin": "1oz",
+        "cointreau": "1oz",
+        "campari": "1oz",
+        "dry vermouth": "1oz"
+    },
+    "Martinez": {
+        "gin": "1oz",
+        "sweet vermouth": "1oz",
+        "angostura bitters": "1oz",
+        "maraschino": "1oz"
+    },
+    "Martini": {"gin": "1oz", "sweet vermouth": "1oz", "orange bitters": "1oz"},
+    "Moscow Mule": {"vodka": "1oz", "ginger beer": "1oz", "lime juice": "1oz"},
+    "Pina Colada": {
+        "bacardi": "1oz",
+        "coconut cream": "1oz",
+        "cream": "1oz",
+        "pineapple juice": "1oz"
+    },
+    "Pink gin": {"gin": "1oz", "angostura bitters": "1oz"},
+    "Pink gin and tonic": {
+        "gin": "1oz",
+        "angostura bitters": "1oz",
+        "sage leaves": "1oz",
+        "tonic water": "1oz"
+    },
+    "Poets Dream": {"gin": "1oz", "dry vermouth": "1oz", "benedictine": "1oz"},
+    "Port wine cocktail": {"port": "1oz", "brandy": "1oz"},
+    "Robert Burns": {
+        "scotch whiskey": "1oz",
+        "sweet vermouth": "1oz",
+        "orange bitters": "1oz",
+        "absinthe": "1oz"
+    },
+    "Rusty Nail": {"scotch whiskey": "1oz", "drambuie": "1oz"},
+    "Saratoga": {
+        "brandy": "1oz",
+        "rye": "1oz",
+        "sweet vermouth": "1oz",
+        "angostura bitters": "1oz"
+    },
+    "Sazerac": {
+        "sugar cube": "1oz",
+        "water": "1oz",
+        "peychauds bitters": "1oz",
+        "rye": "1oz",
+        "absinthe": "1oz"
+    },
+    "Scottish Guard": {
+        "bourbon": "1oz",
+        "lemon juice": "1oz",
+        "orange juice": "1oz",
+        "grenadine": "1oz"
+    },
+    "Seattle Manhatten": {"bourbon": "1oz", "sweet vermouth": "1oz", "kahlua": "1oz"},
+    "Southside": {"gin": "1oz", "lemon juice": "1oz", "simple syrup": "1oz"},
+    "Stork Club": {
+        "gin": "1oz",
+        "cointreau": "1oz",
+        "orange juice": "1oz",
+        "lime juice": "1oz",
+        "angostura bitters": "1oz"
+    },
+    "Tom Collins": {
+        "gin": "1oz",
+        "lemon juice": "1oz",
+        "simple syrup": "1oz",
+        "clubsoda": "1oz"
+    },
+    "Ward 8": {
+        "rye": "1oz",
+        "lemon juice": "1oz",
+        "orange juice": "1oz",
+        "grenadine": "1oz"
+    },
+    "Whiskey Sour": {"bourbon": "1oz", "simple syrup": "1oz", "lemon juice": "1oz"},
+    "White Lady": {"gin": "1oz", "cointreau": "1oz", "lemon juice": "1oz"},
+    "White Spider": {
+        "gin": "1oz",
+        "lemon juice": "1oz",
+        "cointreau": "1oz",
+        "simple syrup": "1oz"
+    },
+    "Blue Lagoon": {"lemonade": "1oz", "blue cura\u00e7ao": "1oz"},
+    "Envy": {"tequila": "1oz", "pineapple juice": "1oz", "blue cura\u00e7ao": "1oz"},
+    "Blue Monday": {"vodka": "1oz", "cointreau": "1oz", "blue cura\u00e7ao": "1oz"},
+    "Long island": {
+        "vodka": "1oz",
+        "bacardi": "1oz",
+        "tequila": "1oz",
+        "gin": "1oz",
+        "cointreau": "1oz",
+        "coke": "1oz",
+        "lemon juice": "1oz"
+    },
+    "Baileys and amaretto": {"baileys": "1oz", "amaretto": "1oz"},
+    "Baileys martini": {"vodka": "1oz", "baileys": "1oz"},
+    "Sambuca twist": {"orange juice": "1oz", "sambuca": "1oz"},
+    "Sambuca 75": {"sambuca": "1oz", "lemon juice": "1oz", "simple syrup": "1oz"},
+    "Sambuca Sazerac": {"bourbon": "1oz", "sambuca": "1oz", "angostura bitters": "1oz"},
+    "Vesper Sambuca": {"gin": "1oz", "vodka": "1oz", "sambuca": "1oz"},
+    "Fairy\u2019s Flower Lemonade": {
+        "sambuca": "1oz",
+        "water": "1oz",
+        "lemon juice": "1oz",
+        "mint": "1oz"
+    },
+    "Alabama slammer": {
+        "southern comfort": "1oz",
+        "amaretto": "1oz",
+        "sloe gin": "1oz",
+        "orange juice": "1oz"
+    },
+    "Tequilla Sunrise": {"tequila": "1oz", "orange juice": "1oz", "grenadine": "1oz"},
+    "Vodka side car": {"cointreau": "1oz", "lemon juice": "1oz", "vodka": "1oz"},
+    "Jack sour": {
+        "jack daniels": "1oz",
+        "lemon juice": "1oz",
+        "simple syrup": "1oz",
+        "egg white": "1oz"
+    },
+    "Coconut white russian": {"vodka": "1oz", "kahlua": "1oz", "coconutcream": "1oz"},
+    "Long Black russian": {"vodka": "1oz", "kahlua": "1oz", "coke": "1oz"},
+    "Bella Bella": {
+        "gin": "1 oz",
+        "campari": "2/3 oz",
+        "limoncello": "1/2 oz",
+        "cointreau": "1/2 oz",
+        "orange juice": "2/3 oz"
+    }
+}

@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cocktailapi
+    project: cocktail
+  name: cocktailapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cocktailapi
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: cocktailapi
+    spec:
+      containers:
+      - image: default-route-openshift-image-registry.apps-crc.testing/kathy/cocktailapi:latest
+        imagePullPolicy: Always
+        name: cocktailapi
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /opt/app-root/app/drinkscabinet.txt
+          name: volume-dwvfp
+          subPath: drinkscabinet.txt
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - configMap:
+          defaultMode: 420
+          name: drinks
+        name: volume-dwvfp
