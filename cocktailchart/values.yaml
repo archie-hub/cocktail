@@ -2,14 +2,14 @@ replicaCount: 2
 project: cocktail
 
 frontend:
-  repository:  default-route-openshift-image-registry.apps-crc.testing/kathy/frontend
+  repository:  albionandrew/openshiftcertplay-frontend
   tag: latest
   pullPolicy: Always
   app: cocktailwebfrontend
   servicename: frontendservice
 
 backend:
-  repository:  default-route-openshift-image-registry.apps-crc.testing/kathy/cocktailapi
+  repository:  albionandrew/openshiftcertplay-backend
   tag: latest
   pullPolicy: Always
   app: cocktailapi
