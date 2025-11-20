@@ -1,4 +1,4 @@
-# app/main.py
+#Openshift is a little different so needed to borrow some of this :)
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from make_cocktails.MakeDrinks import MakeDrinks
@@ -41,10 +41,3 @@ def read_root(drink):
 @app.get("/receipes")
 def drinks_we_can_make_with_receipes_dictionary():
     return ourdrinks.drinks_we_can_make_with_receipes_dictionary
-
-# @app.get("/gin")
-# def read_root():
-#     # return "nope"
-#     return ourdrinks.drink_receipe_with_an_ingredient('gin')
-
-    #return {"message": "Hello from OpenShift-compliant FastAPI!"}
